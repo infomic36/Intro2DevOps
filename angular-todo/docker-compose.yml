@@ -2,11 +2,11 @@ version: 3.3
 services:
   # Builded service
   front: angular-todo
-    build: ./front
+    build ./front
   # From registry
   proxy:
     image: nginx
   # From registry
   back: ODS
-    build: ./back
+    build ./back
     image: back:latest
