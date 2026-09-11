@@ -1,7 +1,7 @@
 version: 3.3
 services:
   # Builded service
-  front:
+  front: angular-todo
     build: ./front
   # From registry
   proxy:
