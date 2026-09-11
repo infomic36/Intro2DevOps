@@ -1,9 +1,21 @@
 version: "3.3"
 services:
- front: angular-todo
+ front:
   build: .
- proxy:
-  image: nginx
+  depends_on:
+  - "db"
+  - "back"
+  db:
+   image: redis
+  back:
+   build: ./back
+   image: back:latest
+   depends_on:
+   - “db”
+   command: |
+   ["./wait-for-it.sh", "db:5432"]
+# proxy:
+#  image: nginx
 # From registry
 #back: ODS
 #  build: ./back
