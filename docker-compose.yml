@@ -1,9 +1,7 @@
 version: "3.3"
 services:
- # Builded service
  front: angular-todo
   build: .
- # From registry
  proxy:
   image: nginx
 # From registry
