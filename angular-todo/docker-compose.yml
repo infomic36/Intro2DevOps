@@ -9,4 +9,4 @@ services:
   # From registry
   back: ODS
     build ./back
-    image: back:latest
+    image back:latest
