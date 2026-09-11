@@ -1,12 +1,12 @@
 version: 3.3
 services:
- # Builded service
- front:
- build: ./front
- # From registry
- proxy:
- image: nginx
- # From registry
- back:
-build: ./back
-image: back:latest
+  # Builded service
+  front:
+    build: ./front
+  # From registry
+  proxy:
+    image: nginx
+  # From registry
+  back:
+    build: ./back
+    image: back:latest
