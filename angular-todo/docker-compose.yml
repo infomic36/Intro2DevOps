@@ -12,8 +12,7 @@ services:
    image: back:latest
    depends_on:
    - “db”
-   command: |
- ["./wait-for-it.sh", "db:5432"]
+   command: ["./wait-for-it.sh", "db:5432"]
 # proxy:
 #  image: nginx
 # From registry
