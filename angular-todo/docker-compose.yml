@@ -7,6 +7,6 @@ services:
   proxy:
     image: nginx
   # From registry
-  back:
+  back: ODS
     build: ./back
     image: back:latest
