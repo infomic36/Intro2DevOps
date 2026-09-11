@@ -1,0 +1,12 @@
+version: 3.9
+services:
+ # Builded service
+ front:
+ build: ./front
+ # From registry
+ proxy:
+ image: nginx
+ # From registry
+ back:
+build: ./back
+image: back:latest
